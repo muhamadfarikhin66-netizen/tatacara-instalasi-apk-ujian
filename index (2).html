@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panduan Instal Aplikasi Ujian – SMPN 2 Plumbon</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#eef3fb;--card:#fff;--ink:#14213d;--muted:#51607a;--blue:#0b4fb3;--blue2:#1d6fe0;--yel:#ffd23f;--yelbg:#fff6d6;--line:#c9d6ee;--scr:#f4f6fb;--row:#fff;--red:#e5303a;--ok:#2fb35a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626;--card:#1a2338;--ink:#eef2fb;--muted:#a9b6d0;--blue:#1d6fe0;--blue2:#4a90f5;--yelbg:#3a3418;--line:#2f3d5c;--scr:#e9edf6;--row:#fff}}
+:root[data-theme="dark"]{--bg:#0f1626;--card:#1a2338;--ink:#eef2fb;--muted:#a9b6d0;--blue:#1d6fe0;--blue2:#4a90f5;--yelbg:#3a3418;--line:#2f3d5c;--scr:#e9edf6;--row:#fff}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.45}
+header{background:linear-gradient(135deg,#0b3f94,#1d6fe0);color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:clamp(20px,5vw,32px)}
+header h1 span{color:var(--yel);display:block}
+header p{margin:8px 0 0;font-size:15px}
+main{max-width:1000px;margin:0 auto;padding:16px}
+.intro{background:var(--yelbg);border:2px solid var(--yel);border-radius:14px;padding:12px 14px;margin-bottom:16px;font-size:15px}
+.step{background:var(--card);border:2px solid var(--line);border-radius:16px;margin-bottom:16px;overflow:hidden}
+.step>h2{margin:0;background:var(--blue);color:#fff;font-size:18px;padding:10px 14px;display:flex;gap:10px;align-items:center}
+.num{flex:none;width:32px;height:32px;border-radius:50%;background:var(--yel);color:#14213d;font-weight:800;display:grid;place-items:center}
+.body{display:flex;flex-wrap:wrap;gap:16px;padding:14px;align-items:flex-start}
+.txt{flex:1 1 260px;min-width:0;font-size:15px}
+.txt ol{margin:8px 0;padding-left:22px}
+.txt li{margin-bottom:7px}
+.txt b{color:var(--blue2)}
+.shots{display:flex;gap:12px;flex-wrap:wrap;flex:1 1 280px;justify-content:center}
+.fig{text-align:center;font-size:12.5px;color:var(--muted);width:170px}
+.phone{width:170px;border:5px solid #1b1f2a;border-radius:22px;background:var(--scr);color:#14213d;padding:8px 8px 10px;min-height:250px;text-align:left;font-size:12px;position:relative;margin-bottom:5px}
+.phone::before{content:"";display:block;width:40px;height:5px;border-radius:3px;background:#1b1f2a;margin:0 auto 7px}
+.bar{font-weight:700;font-size:12px;margin:2px 0 8px}
+.row{background:var(--row);border-radius:8px;padding:7px 8px;margin-bottom:5px;display:flex;align-items:center;gap:6px}
+.row.hl,.btn.hl{outline:3px solid var(--red);outline-offset:1px;animation:p 1.4s infinite}
+@keyframes p{50%{outline-color:transparent}}
+@media (prefers-reduced-motion:reduce){.hl{animation:none!important}}
+.tog{margin-left:auto;width:32px;height:16px;border-radius:8px;background:#bbb;position:relative;flex:none}
+.tog::after{content:"";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:#fff}
+.tog.on{background:var(--blue2)}.tog.on::after{left:18px}
+.btn{display:block;text-align:center;border-radius:14px;padding:6px;margin:6px 0 0;background:var(--blue2);color:#fff;font-weight:700}
+.btn.gh{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+.btn.rd{background:#d93636}
+.btn.sm{font-size:10px;font-weight:400;background:transparent;color:#667;text-decoration:underline;padding:3px}
+.dlg{background:#fff;border-radius:12px;padding:10px;margin-top:20px;box-shadow:0 2px 10px #0003;text-align:center}
+.dlg .ic{font-size:26px}
+.ic{font-size:18px}
+.ws{background:#dcf8c6;border-radius:8px;padding:7px;margin:4px 0}
+.hand{position:absolute;right:6px;bottom:10px;font-size:26px}
+.ok{background:#d9f7e2;border:2px solid var(--ok);border-radius:10px;padding:6px 8px;margin-top:8px;font-weight:700;color:#14613a}
+.note{background:var(--yelbg);border-radius:10px;padding:8px 10px;margin-top:8px;font-size:14px}
+.note.red{background:#ffe4e4;color:#6a1111}
+details{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:5px 0}
+summary{cursor:pointer;font-weight:700;color:var(--blue2)}
+details ol{margin:6px 0 4px}
+.tips{background:var(--card);border:2px solid var(--yel);border-radius:16px;padding:14px 16px;margin-bottom:16px}
+.tips h3{margin:0 0 6px;color:var(--blue2)}
+.tips li{margin:6px 0}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:6px 16px 24px}
+@media print{.step,.tips{break-inside:avoid}.hl{animation:none}header,.step>h2,.num{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header>
+<h1>PANDUAN INSTAL APLIKASI UJIAN<span>SMP NEGERI 2 PLUMBON</span></h1>
+<p>Siapkan izin dulu, baru ketuk file · Ikuti langkahnya berurutan</p>
+</header>
+<main>
+<div class="intro">📱 Aplikasi ini <b>aman</b>, dibuat oleh sekolah, tetapi bukan dari Play Store. Karena itu HP akan meminta <b>izin khusus</b> dan bisa menampilkan <b>peringatan</b>. Itu normal. Ikuti panduan ini dan jangan panik.<br><b>Urutannya:</b> ① siapkan izin → ② unduh file → ③ ketuk file → ④ instal → ⑤ tutup izin kembali.</div>
+
+<!-- LANGKAH 1 -->
+<section class="step"><h2><span class="num">1</span>Siapkan dulu: aktifkan izin “Instal aplikasi tidak dikenal”</h2>
+<div class="body"><div class="txt">
+<p>Lakukan ini <b>lebih dulu, sebelum membuka file APK</b>, supaya nanti tinggal ketuk file. Buka menu sesuai merek HP, lalu aktifkan tombol untuk <b>WhatsApp</b>:</p>
+<details><summary>Xiaomi / Redmi / POCO</summary><ol><li>Pengaturan</li><li>Perlindungan privasi</li><li>Perizinan khusus</li><li>Instal aplikasi tidak dikenal</li><li>Pilih WhatsApp → aktifkan</li></ol></details>
+<details><summary>Samsung</summary><ol><li>Pengaturan</li><li>Keamanan dan privasi</li><li>Pengaturan keamanan lainnya</li><li>Instal aplikasi tidak dikenal</li><li>Pilih WhatsApp → aktifkan</li></ol><small>One UI lama: Pengaturan › Aplikasi › ⋮ › Akses khusus › Instal aplikasi tidak dikenal.</small></details>
+<details><summary>Vivo / iQOO</summary><ol><li>Pengaturan</li><li>Aplikasi dan izin</li><li>Izin khusus</li><li>Instal aplikasi tidak dikenal</li><li>Pilih WhatsApp → aktifkan</li></ol><small>Alternatif: Pengaturan › Keamanan › Instal aplikasi tidak dikenal.</small></details>
+<details><summary>Oppo</summary><ol><li>Pengaturan</li><li>Privasi</li><li>Izin khusus</li><li>Instal aplikasi tidak dikenal</li><li>Pilih WhatsApp → aktifkan</li></ol><small>Oppo lama: Pengaturan › Aplikasi › Manajemen aplikasi › Akses aplikasi khusus.</small></details>
+<details><summary>Realme</summary><ol><li>Pengaturan</li><li>Manajemen aplikasi</li><li>Akses aplikasi khusus</li><li>Instal aplikasi tidak dikenal</li><li>Pilih WhatsApp → aktifkan</li></ol><small>Alternatif: Pengaturan › Privasi › Izin khusus.</small></details>
+<details><summary>Infinix / Tecno</summary><ol><li>Pengaturan</li><li>Aplikasi</li><li>Akses khusus</li><li>Instal aplikasi tidak dikenal</li><li>Pilih WhatsApp → aktifkan</li></ol></details>
+<details><summary>Android murni (Pixel, Motorola, dll.)</summary><ol><li>Pengaturan</li><li>Aplikasi</li><li>Akses aplikasi khusus</li><li>Instal aplikasi tidak dikenal</li><li>Pilih WhatsApp → aktifkan</li></ol></details>
+<div class="note">Jika sudah aktif, tombol WhatsApp berwarna biru/hijau dan tulisan “Izinkan dari sumber ini” menyala. Lalu tekan <b>←</b> sampai keluar dari Pengaturan.</div>
+<div class="note"><b>Cara tercepat semua merek:</b> Pengaturan → kolom pencarian → ketik <b>“tidak dikenal”</b>.</div>
+</div>
+<div class="shots">
+<div class="fig"><div class="phone"><div class="bar">← Pengaturan</div><div class="row">🔒 Perlindungan privasi</div><div class="row hl">🔑 Perizinan khusus</div><div class="row">📍 Lokasi</div><div class="hand">👆</div></div>Contoh Xiaomi/Redmi</div>
+<div class="fig"><div class="phone"><div class="bar">← Instal aplikasi tidak dikenal</div><div class="row">🌐 Chrome <span class="tog"></span></div><div class="row hl">💬 WhatsApp <span class="tog on"></span></div><div class="note" style="font-size:10px;margin-top:6px">Izinkan dari sumber ini: <b>AKTIF</b></div><div class="hand">👆</div></div>Aktifkan WhatsApp</div>
+</div></div></section>
+
+<!-- LANGKAH 2 -->
+<section class="step"><h2><span class="num">2</span>Download file APK dari WhatsApp</h2>
+<div class="body"><div class="txt">
+<ol>
+<li>Buka chat WhatsApp dari guru.</li>
+<li>Ketuk <b>ikon unduh ⬇</b> pada file <b>Aplikasi Ujian.apk</b> sampai ukuran file muncul.</li>
+<li>Tunggu sampai selesai terunduh, lalu lanjut ke Langkah 3.</li>
+</ol>
+<div class="note">Jika nanti muncul tulisan “Dari keamanan, ponsel Anda tidak diizinkan memasang aplikasi dari sumber ini”, berarti <b>Langkah 1 belum aktif</b>. Ulangi Langkah 1.</div>
+</div>
+<div class="shots"><div class="fig"><div class="phone"><div class="bar">← Guru Informatika</div><div class="ws">📄 <b>Aplikasi Ujian.apk</b><br>15 MB · APK</div><div class="ws">Silakan instal ya 🙏</div><div class="row hl" style="margin-top:8px">⬇ Ketuk file ini</div><div class="hand">👆</div></div>Chat WhatsApp</div></div></div></section>
+
+<!-- LANGKAH 3 -->
+<section class="step"><h2><span class="num">3</span>Ketuk file APK, atasi peringatan keamanan</h2>
+<div class="body"><div class="txt">
+<p>Sekarang <b>ketuk file Aplikasi Ujian.apk</b> di chat WhatsApp. Ini yang paling sering membuat siswa bingung. Android dan Google Play Protect bisa memunculkan salah satu layar di samping. Pilihan yang benar selalu <b>yang kecil dan tidak mencolok</b>, bukan tombol biru besar.</p>
+<ol>
+<li><b>“Pengembang tidak terverifikasi” / “Aplikasi ini mungkin berbahaya”</b> → ketuk <b>Detail lainnya</b> lalu <b>Tetap instal</b> / <b>Instal saja</b>.</li>
+<li><b>“Pindai aplikasi dengan Play Protect”</b> → ketuk <b>Instal tanpa memindai</b>, atau <b>Pindai aplikasi</b> lalu tunggu hasilnya, kemudian pilih <b>Tetap instal</b>.</li>
+<li><b>“Aplikasi diblokir” / “App blocked”</b> → ketuk <b>OK</b>, lalu <b>coba ulang</b> dari awal (Langkah 1). Jika tetap diblokir, lapor ke guru.</li>
+<li><b>Xiaomi:</b> jika muncul “Verifikasi keamanan” atau hitungan mundur, tunggu selesai lalu pilih <b>Lanjutkan instal</b> / <b>Instal</b>.</li>
+</ol>
+<div class="note red"><b>Untuk guru:</b> jika HP tetap menolak, Play Protect bisa dimatikan sementara: Play Store → ikon profil → Play Protect → ⚙ → matikan <b>Pindai aplikasi dengan Play Protect</b>. Setelah instal <b>nyalakan kembali</b>.</div>
+</div>
+<div class="shots">
+<div class="fig"><div class="phone"><div class="dlg"><div class="ic">🛡️</div><b>Aplikasi ini mungkin berbahaya</b><div class="btn">Pindai aplikasi</div><div class="btn sm hl">Instal saja (tidak aman)</div></div><div class="hand">👆</div></div>Play Protect: pilih tulisan kecil</div>
+<div class="fig"><div class="phone"><div class="dlg"><div class="ic">⚠️</div><b>Pengembang tidak terverifikasi</b><div class="btn gh hl">Detail lainnya</div><div class="btn">OK</div></div><div class="hand">👆</div></div>Ketuk “Detail lainnya”</div>
+</div></div></section>
+
+<!-- LANGKAH 4 -->
+<section class="step"><h2><span class="num">4</span>Pasang aplikasi</h2>
+<div class="body"><div class="txt">
+<ol>
+<li>Setelah peringatan (jika ada) selesai, layar pemasangan akan terbuka.</li>
+<li>Ketuk <b>Instal</b>.</li>
+<li>Tunggu sampai muncul <b>“Aplikasi terpasang”</b>.</li>
+<li>Ketuk <b>Buka</b>.</li>
+</ol>
+<div class="note"><b>Alternatif:</b> buka <b>File Manager → Download (atau folder WhatsApp → Documents)</b>, lalu ketuk <b>Aplikasi Ujian.apk</b>.</div>
+<div class="ok">✅ Aplikasi siap digunakan!</div>
+</div>
+<div class="shots">
+<div class="fig"><div class="phone"><div class="bar">Aplikasi Ujian</div><div class="row">Apakah Anda ingin memasang aplikasi ini?</div><div class="btn gh">Batal</div><div class="btn hl">Instal</div><div class="hand">👆</div></div>Ketuk “Instal”</div>
+<div class="fig"><div class="phone"><div class="bar">Aplikasi terpasang ✔</div><div class="row">📘 Aplikasi Ujian</div><div class="btn gh">Selesai</div><div class="btn hl">Buka</div><div class="hand">👆</div></div>Ketuk “Buka”</div>
+</div></div></section>
+
+<!-- LANGKAH 5 -->
+<section class="step"><h2><span class="num">5</span>Matikan kembali izin jika sudah selesai</h2>
+<div class="body"><div class="txt">
+<p>Terakhir, tutup lagi izin yang tadi dibuka di Langkah 1 agar HP tetap aman.</p>
+<ol>
+<li>Buka kembali menu <b>Instal aplikasi tidak dikenal</b> (jalur sama seperti Langkah 1).</li>
+<li>Pilih <b>WhatsApp</b>.</li>
+<li>Matikan tombol <b>Izinkan dari sumber ini</b>.</li>
+</ol>
+</div>
+<div class="shots"><div class="fig"><div class="phone"><div class="bar">← Instal aplikasi tidak dikenal</div><div class="row hl">💬 WhatsApp <span class="tog"></span></div><div class="note" style="font-size:10px">Izinkan dari sumber ini: <b>MATI</b></div><div class="hand">👆</div></div>Matikan lagi</div></div></div></section>
+
+<section class="tips"><h3>💡 Jika masih gagal</h3>
+<ul>
+<li><b>“Aplikasi tidak terpasang”</b> → hapus dulu aplikasi ujian versi lama (jika ada), lalu instal lagi.</li>
+<li><b>Memori penuh</b> → kosongkan minimal 100 MB.</li>
+<li><b>Tombol Instal abu-abu / tidak bisa diketuk</b> → tunggu beberapa detik, atau tutup lalu buka ulang file APK.</li>
+<li><b>File APK tidak bisa dibuka</b> → unduh ulang dari WhatsApp (ukuran harus penuh, ±15 MB).</li>
+<li>Pastikan aplikasi hanya dari <b>guru / sekolah</b>. Jangan instal dari sumber lain.</li>
+<li>Masalah lain? Segera lapor ke guru.</li>
+</ul></section>
+</main>
+<footer>Semangat mengikuti ujian! · SMP Negeri 2 Plumbon</footer>
+</body>
+</html>
